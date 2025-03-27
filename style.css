@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img-size-set {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-container {
+  height: 90vh;
+}
+.navbar-container {
+  position: fixed;
+  width: 100%;
+}
+.second-div-container {
+  background-image: url("background1.jpeg");
+  position: relative;
+  height: 80vh;
+}
+.second-div-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.third-div-container {
+  background-image: url("background1.jpeg");
+  position: relative;
+  padding: 50px;
+}
+.third-div-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.button-grp {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+.button-grp li {
+  margin: auto;
+  list-style: none;
+  background-color: aquamarine;
+  margin-bottom: 30px;
+  width: 80%;
+  padding: 7px 8px;
+  text-align: center;
+  background-image: url("background2.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+.button-grp li a {
+  padding: 10px !important;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.event-container {
+  position: relative;
+  z-index: 3;
+}
+.event-cards {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+  position: relative;
+}
+.event-cards::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.card-body {
+  flex: none !important;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.event-cards .card-body h3,
+p {
+  color: white;
+}
+.event-cards .card-body h3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.event-cards .card-body p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.footer-text ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.text-white{
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+}
+.footer-div{
+   
+}
