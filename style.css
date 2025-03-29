@@ -110,6 +110,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  
 }
 .event-cards .card-body p {
   color: white;
@@ -124,12 +125,25 @@ p {
   font-weight: 300;
   font-style: normal;
 }
-.text-white{
+.text-white,.text-dark{
     font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 .footer-div{
    
+}
+.offcanvas-body .nav-heading{
+ 
+
+}
+.menu-list{
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid rgb(182, 167, 167);
 }
