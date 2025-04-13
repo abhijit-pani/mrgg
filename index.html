@@ -23,6 +23,16 @@
         width: 70% !important;
       }
     }
+    .mobile-only {
+    display: none;
+  }
+
+  /* Show the link only on mobile screens */
+  @media (max-width: 768px) {
+    .mobile-only {
+      display: block;
+    }
+  }
   </style>
 </head>
 
@@ -93,8 +103,8 @@
     <section class="second-div">
       <div class="container-fluid second-div-container img-size-set d-flex justify-content-center align-items-center">
         <ul class="button-grp p-0">
-          <li>
-            <a href="1000187806.pdf">Invitation Card</a>
+          <li class="mobile-only">
+            <a href="1000187806.pdf" target="_blank" rel="noopener noreferrer">Invitation Card</a>
           </li>
           <li>
             <a href="https://drive.google.com/file/d/1GWUY0etER3w7JluRF9v8YvaQtTzBwOBf/view" target="_blank">Invitation Card Video</a>
