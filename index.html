@@ -31,6 +31,27 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <audio id="background-music" autoplay loop>
+      <source src="INSTRUMENTAL_MUSIC_Jodhaa_Akbar_Flute.mp3" type="audio/mpeg">
+    </audio>
+  
+    <script>
+      // Try to autoplay on load (muted if needed)
+      const audio = document.getElementById("background-music");
+  
+      // Some browsers block autoplay with sound, so try to play muted first
+      audio.volume = 0.5;
+  
+      // Try autoplay
+      audio.play().catch(() => {
+        // If autoplay fails, wait for user interaction
+        const playMusic = () => {
+          audio.play();
+          document.removeEventListener('click', playMusic);
+        };
+        document.addEventListener('click', playMusic);
+      });
+    </script>
 
   <nav>
     <div class="navbar-container">
@@ -73,7 +94,7 @@
       <div class="container-fluid second-div-container img-size-set d-flex justify-content-center align-items-center">
         <ul class="button-grp p-0">
           <li>
-            <a href="#">Invitation Card</a>
+            <a href="1000187806.pdf">Invitation Card</a>
           </li>
           <li>
             <a href="https://drive.google.com/file/d/1GWUY0etER3w7JluRF9v8YvaQtTzBwOBf/view" target="_blank">Invitation Card Video</a>
